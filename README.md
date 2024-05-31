@@ -18,7 +18,7 @@ evaluate==0.4.2
 tensorboard
 argparse
 loguru
-dotenv
+python-dotenv
 ```
 
 ## Data Preparation
