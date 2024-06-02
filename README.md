@@ -135,19 +135,19 @@ CUDA_VISIBLE_DEVICES=3 python train.py \
 ```
 
 Arguments:
-- `--train_dataset`: train dataset path;
-- `--eval_dataset`: eval dataset path;
-- `--output_path`: parent path to save trained model;
-- `--save_info`: select loss function for train, also `ouput_path/save_info/checkpoint-{}` to save trained model;
-- `--num_shards`: split train dataset to `num_shards` shards;
+- `--train_dataset`: default `"../princeton_data/wiki"`. train dataset path;
+- `--eval_dataset`: default `"../princeton_data/sts"`. eval dataset path;
+- `--output_path`: default `"./output/"`. parent path to save trained model;
+- `--save_info`: default `""`. select loss function for train, also `ouput_path/save_info/checkpoint-{}` to save trained model;
+- `--num_shards`: default `None`. split train dataset to `num_shards` shards;
 - `--unfrozen_layers`: default `['all_layers']`. if set, only layers in `unfrozen_layers` are trainable;
-- `--batch_size`: `batch_size` for train, `batch_size` for test, 2 * `batch_size` for validation;
-- `--lr`: learning rate;
-- `--num_epochs`: number of train epochs;
-- `--max_seq_length`: max seq length for tokenizer;
-- `--pooling`: select pooling mode for bert;
-- `--dropout`: dropout argument for bert;
-- `--seed`: random seed for environment.
+- `--batch_size`: default `64`. `batch_size` for train, `batch_size` for test, 2 * `batch_size` for validation;
+- `--lr`: default `3e-5`. learning rate;
+- `--num_epochs`: default `5`. number of train epochs;
+- `--max_seq_length`: default `32`. max seq length for tokenizer;
+- `--pooling`: default `'cls'`. select pooling mode for bert;
+- `--dropout`: default `0.1`. dropout argument for bert;
+- `--seed`: default `42`. random seed for environment.
 
 **Eval**
 
