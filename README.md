@@ -134,7 +134,7 @@ CUDA_VISIBLE_DEVICES=3 python train.py \
     --seed 42
 ```
 
-Args:
+Arguments:
 - `--train_dataset`: train dataset path;
 - `--eval_dataset`: eval dataset path;
 - `--output_path`: parent path to save trained model;
