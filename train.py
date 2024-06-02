@@ -125,7 +125,7 @@ def evaluator(model: nn.Module, dataloader: DataLoader):
     return spearmanr_score
 
 if __name__ == '__main__':
-    load_dotenv(dotenv_path="../envs/dqg.env", verbose=True, override=True)
+    load_dotenv(dotenv_path="./envs/simcse.env", verbose=True, override=True)
     checkpoint = os.getenv('CHECKPOINT')
     logger.info("🐳 checkpoint: {}".format(checkpoint))
 
