@@ -151,6 +151,6 @@ Arguments:
 
 **Eval**
 
-For evaluation, we only select `SentEval/STS/STSBenchmark/sts-dev.csv` and `SentEval/STS/STSBenchmark/sts-test.csv` during valid and test.
+For evaluation, we only use `SentEval/STS/STSBenchmark/sts-dev.csv` and `SentEval/STS/STSBenchmark/sts-test.csv` dataset during valid and test respectively.
 
 
