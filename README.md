@@ -154,11 +154,11 @@ Arguments:
 For evaluation, we only use `SentEval/STS/STSBenchmark/sts-dev.csv` and `SentEval/STS/STSBenchmark/sts-test.csv` dataset during valid and test respectively.
 
 Results:
-|save_info   |lr  |batch_size|dropout|spearmanr_score|
-|:-----------|:---|:---------|:------|:--------------|
-|unsup       |3e-5|64        |0.1    |0.8275         |
-|yangjx_unsup|3e-5|64        |0.1    |0.8780         |
-|sup         |3e-5|64        |0.1    |0.7624         |
-|yangjx_sup  |3e-5|64        |0.1    |0.7257         |
+|save_info   |lr  |batch_size|dropout|num_epochs|spearmanr_score|
+|:-----------|:---|:---------|:------|:---------|:--------------|
+|unsup       |3e-5|64        |0.1    |5         |0.8275         |
+|yangjx_unsup|3e-5|64        |0.1    |5         |0.8780         |
+|sup         |3e-5|64        |0.1    |5         |0.7624         |
+|yangjx_sup  |3e-5|64        |0.1    |5         |0.7257         |
 
 
