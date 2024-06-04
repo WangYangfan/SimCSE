@@ -72,7 +72,7 @@ class YangJXSimCSEUnSupLoss:
         # 定义每个样本对应的正样本的序号
 
         sim_mat = F.cosine_similarity(features.unsqueeze(1), features.unsqueeze(0), dim=-1)
-        sim_mat = sim_mat - torch.eye(sim_mat.shape[0]).to(self.device) * 1e12
+        sim_mat = sim_mat - torch.eye(sim_mat.shape[0], device=self.device) * 1e12
         sim_mat = sim_mat / self.temperature
         # 计算句向量余弦相似度矩阵，对角线置为负无穷，使用温度系数放大
 
